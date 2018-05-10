@@ -9,15 +9,31 @@ namespace PD_1_2
 			string yesno = "yes";
 			while (yesno == "yes")
 			{
+				Console.WriteLine("uzdevums 7: ");
 				Uzdevums7();
+				Console.WriteLine();
+
+				Console.WriteLine("uzdevums 8: ");
 				Uzdevums8();
+				Console.WriteLine();
+
+				Console.WriteLine("uzdevums 9: ");
 				Uzdevums9();
-				Console.WriteLine("Uzdevums 10: " + Uzdevums10());
+				Console.WriteLine();
+
+				Console.WriteLine("uzdevums 10: ");
+				Console.WriteLine(Uzdevums10());
+				Console.WriteLine();
+
+				Console.WriteLine("uzdevums 11: ");
 				Uzdevums11();
+				Console.WriteLine();
+
+				Console.WriteLine("uzdevums 12: ");
 				Uzdevums12();
+				Console.WriteLine();
 
 				Console.WriteLine("Vēlies atkartot? (Ja ja, tad raksti - yes)");
-				//Console.ReadLine();
 				yesno = Console.ReadLine();
 			}
 
@@ -69,8 +85,8 @@ namespace PD_1_2
 					Console.WriteLine("Visticamāk tu ievadīji kaut-ko ne to :(");
 					break;
 			}
-			//string gluk = Console.ReadLine();
-			//Console.WriteLine(gluk);
+			string gluk = Console.ReadLine();
+			Console.WriteLine(gluk);
 		}
 		//uzdevums 9
 		static void Uzdevums9()
@@ -108,14 +124,14 @@ namespace PD_1_2
 					Console.WriteLine("Kaut-kur mēs sačakarējamies meistarībā, F!");
 					break;
 			}
-			Console.WriteLine("Te beidzas uzdevums9");
+			//Console.WriteLine("Te beidzas uzdevums9");
 		}
 		//Uzdevums 10
 		static int Uzdevums10()
 		{
 		int a, b;
 			Console.WriteLine("Ievadi kādu integer ko kāpināt:");
-			a = Convert.ToInt16(Console.ReadLine());
+			a = Convert.ToInt32(Console.ReadLine());
 			b = a * a;
 			return b;
 	    }
